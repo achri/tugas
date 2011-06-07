@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/lib/authorization
+END
+aasm_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/lib/authorization/aasm_roles.rb
+END
+stateful_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/lib/authorization/stateful_roles.rb
+END

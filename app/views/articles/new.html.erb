@@ -1,0 +1,19 @@
+<h3>Share an article:</h3>
+<% form_for @article do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.error_messages %>
+<table class="blue-line">
+  <tr>
+    <td width="100px">Title</td><td width="5px">:</td><td><%= f.text_field :title %></td>
+  </tr>
+  <tr>
+    <td>Body</td><td>:</td><td><%= f.text_area :body, :cols => 40, :rows => 5 %></td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="right"><%= f.submit "Create" %></td>
+  </tr>
+</table>
+<% end %>

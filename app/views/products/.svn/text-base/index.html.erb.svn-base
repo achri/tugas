@@ -1,0 +1,34 @@
+<table class="blue-line" width="100%">
+  <tr>
+    <th colspan="4" align="center"><strong>List Product</strong></th>
+  </tr>
+  <% @products.each_with_index do |product,idx| %>
+  <tr>
+    <td rowspan="3" width="5px"><%= @row_number+idx %>.</td><td colspan="3"><strong><%= product.name%></strong></td>
+  </tr>
+  <!--tr>
+    <td width="20px">Description</td><td width="5px">:</td><td><%= product.description%></td>
+  </tr-->
+  <tr>
+    <td width="20px">Price</td><td width="5px">:</td><td><%= number_to_currency(product.price)%></td>
+  </tr>
+  <!--tr>
+    <td>Location</td><td>:</td><td><%= product.location%></td>
+  </tr>
+  <tr>
+    <td>Weight</td><td>:</td><td><%= product.weight%></td>
+  </tr-->
+  <tr>
+    <td>Category</td><td>:</td><td><%= product.category.name%></td>
+  </tr>
+  <tr>
+    <td colspan="4" align="right"><%= link_to "See More...", product_path(product.id)%></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <% end %>
+  <tr>
+    <td colspan="4" align="center"><%= will_paginate @products%> <%= page_entries_info @products%> </td>
+  </tr>
+</table>

@@ -1,0 +1,135 @@
+github
+=================================================================================
+
+Global setup:
+
+ Download and install Git
+  git config --global user.name "Your Name"
+  git config --global user.email achri@live.com
+
+
+Next steps:
+
+  mkdir testapp
+  cd testapp
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:achri/tugas.git
+  git push -u origin master
+
+
+Existing Git Repo?
+
+  cd existing_git_repo
+  git remote add origin git@github.com:achri/testapp.git
+  git push -u origin master
+
+Import SVN
+  https://github.com/achri/testapp/imports/new
+
+
+Heroku
+=================================================================================
+
+Prerequisites
+
+Before using Heroku there are three simple requirements:
+
+    Run your Ruby application locally: Getting Started with Rails, Developing Rails apps on Mac OS X
+
+    Install Git: On a Mac, Windows, or UNIX/Linux
+
+    Create a Heroku account and install the Heroku gem
+
+    install gems:
+
+    Sign-up for a Heroku account if you haven’t already and then install the heroku gem.
+
+    $ gem install heroku
+
+    You will be asked to enter your Heroku credentials the first time you run a command; after the first time, your email address and an API token will be saved to ~/.heroku/credentials for future use.
+
+    It’s generally a good idea to add your public key immediately after installing the heroku gem so that you can use git to push or clone Heroku app repositories:
+
+    $ heroku keys:add
+    Enter your Heroku credentials.
+    Email: joe@example.com
+    Password:
+    Uploading ssh public key /Users/joe/.ssh/id_rsa.pub
+
+Getting Your App on Heroku
+
+Now that you have your application running locally, let’s deploy it to Heroku:
+1. Track your application with Git
+
+If you’re already using Git with your application, skip to the next step. If you’re not yet using Git to track your application, run this:
+
+$ cd PATH/TO/MY_APP
+$ git init
+Initialized empty Git repository in .git/
+$ git add .
+$ git commit -m "new app"
+Created initial commit 5df2d09: new app
+44 files changed, 8393 insertions(+), 0 deletions(-)
+
+2. Set up your SSH keys
+
+Git uses SSH as its secure transport protocol. You will need to generate a public SSH key and upload it to Heroku. Follow the instructions at Github for Mac, Windows, or Linux for generating keys.
+windows = http://help.github.com/msysgit-key-setup/
+linux = http://help.github.com/linux-key-setup/
+
+3. Create your Heroku application
+
+At the command line, run heroku create. The first time you do this, you’ll be asked to enter your Heroku credentials. Once you do, your email address and an API token will be saved to ~/.heroku/credentials, so you won’t have to provide them again.
+
+This first use will also upload your public SSH key so you’ll be able to push and pull code.
+
+$ heroku create
+Enter your Heroku credentials.
+Email: joe@example.com
+Password:
+Uploading ssh public key /Users/joe/.ssh/id_rsa.pub
+Created http://high-sunrise-58.heroku.com/ | git@heroku.com:high-sunrise-58.git
+Git remote heroku added
+
+The last line shows the name of your new Heroku app; in this case, it’s “high-sunrise-58”, and is available at http://high-sunrise-58.heroku.com. If you were to visit that URL before pushing your application code (either by typing it in or running heroku open), you’d see a standard Heroku welcome page.
+
+On the next to last line, there’s another important piece of information: git@heroku.com:high-sunrise-58.git. This is the Git repository address for your new Heroku app, and if you check the output of git remote show heroku you can see that the heroku gem added it as a remote for you automatically.
+4. Push your application to Heroku
+
+$ git push heroku master
+Counting objects: 65, done.
+Compressing objects: 100% (58/58), done.
+Writing objects: 100% (65/65), 80.54 KiB, done.
+Total 65 (delta 14), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+       Compiled slug size is 0.1MB
+-----> Launching....... done
+       App deployed to Heroku
+
+To git@heroku.com:high-sunrise-58.git
+ * [new branch]      master -> master
+
+5. Bootstrap your database
+
+Your app is now running on Heroku with an empty database. Depending on your framework, run the appropriate command to set up your DB. For Ruby on Rails, run:
+
+$ heroku rake db:migrate
+(in /mnt/home/slugs/41913_b81cc1e5813c58c443e4120aff984d006f36ef20/mnt)
+== 20081118092504 CreateWidgets: migrating ====================================
+-- create_table(:widgets)
+   -> 0.0519s
+== 20081118092504 CreateWidgets: migrated (0.0520s) ===========================
+
+That’s it, your app is now running on Heroku! You can take a look at it in your default web browser by running heroku open.
+Next Steps
+
+Now that your application is running, it’s easy to push updates:
+
+    Develop and test changes locally.
+    Commit code to git.
+    Push your changes to Heroku with git push heroku.

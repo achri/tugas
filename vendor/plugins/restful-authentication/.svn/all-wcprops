@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/Rakefile
+END
+restful-authentication.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/restful-authentication.gemspec
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/TODO
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/CHANGELOG
+END
+README.markdown
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/restful-authentication/README.markdown
+END

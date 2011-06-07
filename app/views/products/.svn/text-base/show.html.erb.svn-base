@@ -1,0 +1,29 @@
+<h3>Detail Product</h3>
+<table width="50%" class="blue-line">
+  <tr>
+    <td width="100px">Name</td><td width="5px">:</td><td><%= @product.name %></td>
+  </tr>
+  <tr>
+    <td>Description</td><td>:</td><td><%= @product.description %></td>
+  </tr>
+  <tr>
+    <td>Price</td><td>:</td><td><%= number_to_currency(@product.price, :unit => "$.") %></td>
+  </tr>
+  <tr>
+    <td>Location</td><td>:</td><td><%= @product.location %></td>
+  </tr>
+  <tr>
+    <td>Weight</td><td>:</td><td><%= @product.weight %></td>
+  </tr>
+  <tr>
+    <td>Category</td><td>:</td><td><%= @product.category.name%></td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="right">
+      <%= button_to "Back", products_path, :method => :get%>
+    </td>
+  </tr>
+</table>

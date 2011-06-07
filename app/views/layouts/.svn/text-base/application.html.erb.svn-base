@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Online Store</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Online Store" />
+    <meta name="keywords" content="online, onlinestore, store, shop, shoping" />
+
+    <% # css included %>
+    <%= stylesheet_link_tag "960gs/fluid/reset.css" %>
+    <%= stylesheet_link_tag "960gs/fluid/text.css" %>
+    <%= stylesheet_link_tag "general.css" %>
+    <%= stylesheet_link_tag "960gs/fluid/960.css" %>
+    
+    <%= stylesheet_link_tag "ui/themes/redmond/jquery.ui.all.css" %>
+
+    <% # js included %>
+    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "jquery/external/jquery.metadata.js" %>
+    <%= javascript_include_tag "jquery/plugins/jquery.autonumeric.js" %>
+    <%= javascript_include_tag "jquery/plugins/jquery.meio.mask.js" %>
+    
+    <%= javascript_include_tag "general/jquery-ui" %>
+    <%= javascript_include_tag "general/jquery.meio.mask.js" %>
+    <%= javascript_include_tag "general/user.js" %>
+    
+  </head>
+  <body>
+    <div id="container" class="container_12 corner-all">
+      <div id="header" class="grid_12">
+        <div class="logo"><h1>ONLINE STORE PRACTICE APPLICATION</h1></div>
+        <div class="clear"></div>
+        <div class="menu">
+          <ul>
+            <li><%= link_to "Home", root_path, :class => "corner-all"%> </li>
+            <li><%= link_to "Products", products_path, :class => "corner-all"%> </li>
+            <li><%= link_to "Articles", articles_path, :class => "corner-all"%> </li>
+            <li><%= (current_user && current_user.email == 'achri@live.com')?(link_to "Categories", admin_categories_path, :class => "corner-all"):("")%> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div id="content" class="grid_12">
+        <div class="grid_3">
+          <%= login_sidebar %>
+        </div>
+        <div class="grid_8">
+          <div class="content corner-all grid_8">
+            <%= yield %>
+          </div>
+          <div class="content corner-all grid_8">
+            <% flash.each do |key,value| %>
+            <div class="grid_8 <%= key %>">
+              <%= value %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div id="footer" class="grid_12">
+        
+      </div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

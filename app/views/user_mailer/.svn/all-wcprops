@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/user_mailer
+END
+signup_notification.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/user_mailer/signup_notification.erb
+END
+activation.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/user_mailer/activation.erb
+END

@@ -1,0 +1,45 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 35
+/svn/ahrierepo_onlineshop/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/ahrierepo_onlineshop/!svn/ver/7
+END
+Gemfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ahrierepo_onlineshop/!svn/ver/7/Gemfile.lock
+END
+tutorial.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ahrierepo_onlineshop/!svn/ver/6/tutorial.txt
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ahrierepo_onlineshop/!svn/ver/2/Rakefile
+END
+repo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ahrierepo_onlineshop/!svn/ver/6/repo.txt
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ahrierepo_onlineshop/!svn/ver/7/Gemfile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ahrierepo_onlineshop/!svn/ver/1/README
+END

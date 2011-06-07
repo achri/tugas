@@ -1,0 +1,48 @@
+ActsAsSmilable
+=================
+
+First one your should to do - install plugin into your rails application. It's very simple, just run:
+
+	ruby script/plugin install git://github.com/dsalahutdinov/acts_as_smilable.git
+
+from root of your rails app.
+
+Now you have method several method available in your rails application:
+	1) glyph_smiles method is supported by model (ActiveRecord::Base). It replaces all smiles symbols like ;) with link to smile image
+	2) smiles_inserter("comment_raw_body") is supported by ActionView::Base, it renders smiles table and inserts smiles symbol in html input control
+
+Model:
+
+	class Comment < ActiveRecord::Base
+	  before_save :transform_comment
+	  
+	  def transform_comment
+	    self.body = glyph_smiles(self.body)
+	  end
+	end
+
+View:
+	<% form_for(@comment, :url => comment_post_path(post)) do |f| %>
+	    <%= f.text_area :raw_body %>
+	    <%= smiles_inserter("comment_body") %><!-- pass your text_area id to smiles_inserter method -->
+	    <%= f.submit "Leave Comment" %>
+	<% end %>
+
+There are options for smiles_inserter helper:
+	1) :count - smiles count to output
+	2) :columns - how many columns should contain "smiles table"
+	3) :class - CSS class for "smiles table"
+
+Options can be used this way:
+	<%= smiles_inserter("comment_raw_body", :class => "smiles-table", :columns => 13, :count => 26) %>
+
+One more thing you should to do - add specific route your routes.rb file before last two routes catched all:
+	
+	map.connect 'smiles/:id.:format', :controller => "smiles", :action => :show
+
+Example
+=======
+See exapmple below.
+
+
+Copyright (c) 2010 Salahutdinov Dmitry, released under the MIT license

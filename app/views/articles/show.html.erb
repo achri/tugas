@@ -1,0 +1,50 @@
+<h3>View article:</h3>
+<table class="blue-line" width="100%">
+  <tr>
+    <td width="100px">Title</td><td width="5px">:</td><td><%= @article.title %></td>
+  </tr>
+  <tr>
+    <td>Body</td><td>:</td><td><%= @article.body %></td>
+  </tr>
+  <tr>
+    <td colspan="3"><hr /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="right"><%= button_to "back", articles_path, :method => :get %></td>
+  </tr>
+</table>
+
+<% unless(current_user.nil?)%>
+  <table width="100%" class="blue-line">
+  <thead>
+  <tr>
+    <th colspan="3">Comments</th>
+  </tr>
+  </thead>
+  <tbody id="comments">
+  <% @comments.each_with_index do |comment,idx|%>
+  <tr>
+    <td width="5px"><%= idx+1 %>.</td>
+    <td colspan="2"><%= comment.comment %></td>
+  </tr>
+  <% end %>
+  </tbody>
+  <tr>
+    <td colspan="3">
+      <span class="spinner"><%= image_tag ('layout/spinner.gif')%> </span>
+      <% form_remote_tag :url => comments_path, :update => "#comments",
+          :before=> "$('span.spinner').show()",
+          :complete=> "$('span.spinner').hide()" do %>
+        <%= text_area :comment, :comment, :cols => 43, :rows => 5%>
+        <br />
+        <a href="#" class="show-smiles">Show Smiles</a>
+        <%= smiles_inserter("comment_comment", :class => "smiles-table", :columns => 13, :count => 26) %>
+        <%= hidden_field :comment, :article_id, :value => @article.id %>
+        <%= hidden_field :comment, :user_id, :value => current_user.id %>
+        <p><%= recaptcha_tags %></p>
+        <%= submit_tag "comment" %>
+      <% end %>
+    </td>
+  </tr>
+  </table>
+<% end %>

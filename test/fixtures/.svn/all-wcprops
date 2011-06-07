@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/fixtures
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/fixtures/users.yml
+END
+products.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/fixtures/products.yml
+END
+categories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/fixtures/categories.yml
+END
+comments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/fixtures/comments.yml
+END
+articles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/fixtures/articles.yml
+END

@@ -1,0 +1,7 @@
+Recaptcha.reload();
+<% @comments.each_with_index do |comment,idx|%>
+  <tr>
+    <td width="5px"><%= idx+1 %>.</td>
+    <td colspan="2"><%= comment.comment %></td>
+  </tr>
+<% end %>

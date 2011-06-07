@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ahrierepo_onlineshop/!svn/ver/4/db/migrate
+END
+20110531055658_create_products.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ahrierepo_onlineshop/!svn/ver/1/db/migrate/20110531055658_create_products.rb
+END
+20110531055639_create_categories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ahrierepo_onlineshop/!svn/ver/1/db/migrate/20110531055639_create_categories.rb
+END
+20110606071304_change_column_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ahrierepo_onlineshop/!svn/ver/4/db/migrate/20110606071304_change_column_to_users.rb
+END
+20110531055157_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ahrierepo_onlineshop/!svn/ver/1/db/migrate/20110531055157_create_users.rb
+END
+20110531055714_create_comments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ahrierepo_onlineshop/!svn/ver/1/db/migrate/20110531055714_create_comments.rb
+END
+20110531055705_create_articles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ahrierepo_onlineshop/!svn/ver/1/db/migrate/20110531055705_create_articles.rb
+END
+20110531055931_add_column_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ahrierepo_onlineshop/!svn/ver/1/db/migrate/20110531055931_add_column_to_users.rb
+END

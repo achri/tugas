@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/session_store.rb
+END
+site_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/site_keys.rb
+END
+cookie_verification_secret.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/cookie_verification_secret.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/new_rails_defaults.rb
+END
+recaptcha.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/recaptcha.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ahrierepo_onlineshop/!svn/ver/1/config/initializers/mime_types.rb
+END

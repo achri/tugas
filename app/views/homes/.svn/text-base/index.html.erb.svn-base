@@ -1,0 +1,40 @@
+<table class="blue-line" width="100%">
+  <tr>
+    <th align="center"><strong>Latest Product Added</strong></th>
+  </tr>
+  <tr>
+    <td>
+      <ul class="products">
+        <% @products.each do |product| %>
+        <li class="corner-all">
+          <table width="170px" class="clear-table">
+            <tr>
+              <td width="30px">Name</td><td width="5px">:</td><td><%= product.name %></td>
+            </tr>
+            <tr align="left">
+              <td>Price</td><td>:</td><td><%= number_to_currency(product.price) %></td>
+            </tr>
+            <tr>
+              <td colspan="3" align="right"><%= link_to "See more ...", product_path(product.id), :method => :get%></td>
+            </tr>
+          </table>
+        </li>
+        <% end %>
+      </ul>
+    </td>
+  </tr>
+</table>
+<div class="clear"></div>
+<table class="blue-line" width="100%">
+  <tr>
+    <th align="center"><strong>Latest Article from buddies</strong></th>
+  </tr>
+  <% @articles.each do |article| %>
+  <tr>
+    <td><%= truncate(article.body, 20, "…")%> <%= link_to "Read more ...", article_path(article.id), :method => :get%></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <% end %>
+</table>

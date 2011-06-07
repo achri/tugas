@@ -1,0 +1,51 @@
+<h3>Edit Profile</h3>
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+<table width="80%" class="blue-line">
+  <tr>
+    <td width="100px">Username</td><td width="5px">:</td><td><%= f.text_field :name %></td>
+  </tr>
+  <tr>
+    <td>New Password</td><td>:</td><td><%= f.password_field :password %></td>
+  </tr>
+  <tr>
+    <td>Confirm Password</td><td>:</td><td><%= f.password_field :password_confirmation %></td>
+  </tr>
+  <tr>
+    <td>Address</td><td>:</td><td><%= f.text_field :address %></td>
+  </tr>
+  <tr>
+    <td>Phone Number</td><td>:</td><td><%= f.text_field :phone_number, :class => 'masked {mask: "(999) 99999999"}' %></td>
+  </tr>
+   <tr>
+    <td>Email</td><td>:</td><td><%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td>Birthday</td><td>:</td><td><%= f.text_field :birthday, :readonly => true, :class => 'calender' %></td>
+  </tr>
+  <tr>
+    <td>Gender</td><td>:</td><td><%= f.select :gender, {"Male"=> 1,"Female" => 0},{:include_blank => true} %></td>
+  </tr>
+  <tr>
+    <td>YM</td><td>:</td><td><%= f.text_field :ym %></td>
+  </tr>
+  <tr>
+    <td>Gtalk</td><td>:</td><td><%= f.text_field :gtalk %></td>
+  </tr>
+  <tr>
+    <td>Facebook</td><td>:</td><td><%= f.text_field :facebook %></td>
+  </tr>
+  <tr>
+    <td>Blog</td><td>:</td><td><%= f.text_field :blog %></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <p><%= recaptcha_tags %></p>
+    </td>
+  </tr>
+  <tr>
+    <td><%= link_to "Back", user_path(current_user.id)%></td>
+    <td colspan="2" align="right"><%= f.submit %></td>
+  </tr>
+</table>
+<% end %>

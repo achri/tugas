@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+#one: {}
+# column: value
+#
+#two: {}
+#  column: value
+
+product1:
+  id: 1
+  name: Product1
+  price: 1400
+  description: Test Product1
+  location: Location1
+  weight: 40
+  user_id: 1
+  category_id: 1
+
+product2:
+  id: 2
+  name: Product2
+  price: 1800
+  description: Test Product2
+  location: Location2
+  weight: 30
+  user_id: 1
+  category_id: 1

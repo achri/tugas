@@ -1,0 +1,22 @@
+<h1>Listing Categories</h1>
+
+<table class="blue-line" width="60%">
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    <th>Parent</th>
+    <th>Options</th>
+  </tr>
+
+<% @categories.each_with_index do |category,idx| %>
+  <tr>
+    <td align="right"><%=h idx+1%>.</td>
+    <td><%=h category.name %></td>
+    <td align="center"><%=h (category.parent_id.nil?)?"-":category.parent_category.name %></td>
+    <td align="center"><%= link_to 'Show', admin_category_path(category) %> |
+      <%= link_to 'Edit', edit_admin_category_path(category) %> |
+      <%= link_to 'Destroy', admin_category_path(category), :confirm => 'Are you sure?', :method => :delete %>
+    </td>
+  </tr>
+<% end %>
+</table>

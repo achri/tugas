@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ahrierepo_onlineshop/!svn/ver/1/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ahrierepo_onlineshop/!svn/ver/1/script/plugin
+END

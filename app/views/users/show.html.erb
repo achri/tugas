@@ -1,0 +1,36 @@
+<h3>User Profile</h3>
+<table width="50%" class="blue-line">
+  <tr>
+    <td width="100px">Username</td><td width="5px">:</td><td><%= @user.name %></td>
+  </tr>
+  <tr>
+    <td>Password</td><td>:</td><td>******</td>
+  </tr>
+  <tr>
+    <td>Address</td><td>:</td><td><%= @user.address %></td>
+  </tr>
+  <tr>
+    <td>Phone Number</td><td>:</td><td><%= @user.phone_number %></td>
+  </tr>
+   <tr>
+    <td>Email</td><td>:</td><td><%= @user.email %></td>
+  </tr>
+  <tr>
+    <td>Birthday</td><td>:</td><td><%= @user.birthday %></td>
+  </tr>
+  <tr>
+    <td>Gender</td><td>:</td><td><%= (@user.gender)?('Male'):('Female') %></td>
+  </tr>
+  <tr>
+    <td>YM</td><td>:</td><td><%= @user.ym %></td>
+  </tr>
+  <tr>
+    <td>Gtalk</td><td>:</td><td><%= @user.gtalk %></td>
+  </tr>
+  <tr>
+    <td>Facebook</td><td>:</td><td><%= @user.facebook %></td>
+  </tr>
+  <tr>
+    <td>Blog</td><td>:</td><td><%= @user.blog %></td>
+  </tr>
+</table>

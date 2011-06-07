@@ -1,0 +1,13 @@
+<h1>Show Category</h1>
+
+<p>
+  <b>Name:</b>
+  <%=h @category.name %>
+</p>
+<p>
+  <b>Parent Name:</b>
+  <%=h (@category.parent_id?)?(@category.parent_category.name):"-" %>
+</p>
+
+<%= link_to 'Edit', edit_admin_category_path(@category) %> |
+<%= link_to 'Back', admin_categories_path %>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/recaptcha/lib/recaptcha
+END
+client_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/recaptcha/lib/recaptcha/client_helper.rb
+END
+verify.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/recaptcha/lib/recaptcha/verify.rb
+END
+merb.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/recaptcha/lib/recaptcha/merb.rb
+END
+configuration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/recaptcha/lib/recaptcha/configuration.rb
+END
+rails.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ahrierepo_onlineshop/!svn/ver/1/vendor/plugins/recaptcha/lib/recaptcha/rails.rb
+END

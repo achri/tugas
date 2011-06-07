@@ -1,0 +1,26 @@
+<table class="blue-line" width="100%">
+  <tr>
+    <th colspan="2" align="center"><strong>List Article</strong></th>
+  </tr>
+  <% @articles.each_with_index do |article,idx| %>
+  <tr>
+    <td rowspan="2"><%= @row_number+idx %>.</td><td><strong><%= article.title%></strong></td>
+  </tr>
+  <tr>
+    <td><%= article.body%></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="right">
+      <%= link_to "Read More...", article_path(article)%> |
+      <%= link_to 'Edit', edit_article_path(article) %> |
+      <%= link_to 'Destroy', article_path(article), :confirm => 'Are you sure?', :method => :delete %>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <% end %>
+  <tr>
+    <td colspan="2" align="center"><%=will_paginate @articles%> <%=page_entries_info @articles%></td>
+  </tr>
+</table>

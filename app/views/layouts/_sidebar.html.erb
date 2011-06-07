@@ -1,0 +1,47 @@
+<div class="sidebar corner-all">
+  <% form_tag session_path do -%>
+  <table width="100%">
+    <tr>
+      <td colspan="3"><strong>Log in</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <%= label_tag 'id' %>
+      </td><td>:</td>
+      <td>
+        <%= text_field_tag 'login', @login , :size => 15%>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= label_tag 'pass' %>
+      </td><td>:</td>
+      <td>
+        <%= password_field_tag 'password', nil , :size => 15%>
+      </td>
+    </tr>
+    <!--tr>
+      <td>
+        <%= label_tag 'remember_me', 'Remember me' %>
+      </td><td>:</td>
+      <td>
+        <%= check_box_tag 'remember_me', '1', @remember_me %>
+      </td>
+    </tr-->
+	<tr>
+	  <td colspan="3">
+	  </td>
+	</tr>
+    <tr>
+      <td colspan="3" align="right">
+        <%= submit_tag 'Log in' %>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center">
+        <%= link_to "forgot password", root_path%> | <%= link_to "signup", signup_path%>
+      </td>
+    </tr>
+  </table>
+  <% end %>
+</div>

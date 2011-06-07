@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ahrierepo_onlineshop/!svn/ver/5/test/unit
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ahrierepo_onlineshop/!svn/ver/1/test/unit/user_test.rb
+END
+product_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/unit/product_test.rb
+END
+comment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/unit/comment_test.rb
+END
+article_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ahrierepo_onlineshop/!svn/ver/4/test/unit/article_test.rb
+END
+user_mailer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ahrierepo_onlineshop/!svn/ver/1/test/unit/user_mailer_test.rb
+END
+category_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ahrierepo_onlineshop/!svn/ver/5/test/unit/category_test.rb
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/sessions
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/sessions/_new.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/sessions/new.html.erb
+END
+_require_login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ahrierepo_onlineshop/!svn/ver/1/app/views/sessions/_require_login.html.erb
+END
